@@ -20,7 +20,7 @@ const TextInput = ({
   return (
     <form onSubmit={handleGenerateMeme}>
       <label>
-        Top Text: <br />
+        Top text <br />
         <input
           placeholder="Enter Top Text"
           value={tempTopText}
@@ -32,7 +32,7 @@ const TextInput = ({
         />
       </label>
       <label>
-        Bottom Text:
+        Bottom text
         <input
           placeholder="Enter Bottom Text"
           value={tempBottomText}
