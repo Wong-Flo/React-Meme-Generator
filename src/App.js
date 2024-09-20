@@ -5,8 +5,8 @@ import TextInput from './textInput.js';
 
 // initial useState for when loading the page
 export default function App() {
-  const [topText, setTopText] = useState('nice');
-  const [bottomText, setBottomText] = useState('Double Nice');
+  const [topText, setTopText] = useState('Top text');
+  const [bottomText, setBottomText] = useState('Bottom text');
   const [template, setTemplate] = useState('doge');
   const [memeUrl, setMemeUrl] = useState('');
   // url edit when typing into the Input fields

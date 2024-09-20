@@ -27,7 +27,7 @@ const Meme = ({ memeUrl }) => {
             src={memeUrl}
             alt="Generated Meme"
             data-test-id="meme-image"
-            style={{ width: '300px', height: '300px' }}
+            style={{ width: '400px', height: '400px' }}
           />
           <br />
           <button className="downloadBtn" onClick={downloadMeme}>
