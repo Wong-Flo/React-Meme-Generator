@@ -22,7 +22,7 @@ const FetchTemplate = ({ template, setTemplate }) => {
   return (
     <div>
       <label>
-        Meme Template
+        Meme template
         <select value={template} onChange={(e) => setTemplate(e.target.value)}>
           {templates.map((temp) => (
             <option key={`template-${String(temp.id)}`} value={temp.id}>
