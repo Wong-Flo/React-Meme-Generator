@@ -5,8 +5,8 @@ import TextInput from './textInput.js';
 
 // initial useState for when loading the page
 export default function App() {
-  const [topText, setTopText] = useState(`memes`);
-  const [bottomText, setBottomText] = useState(`such wow`);
+  const [topText, setTopText] = useState(``);
+  const [bottomText, setBottomText] = useState(``);
   const [template, setTemplate] = useState('doge');
   const [memeUrl, setMemeUrl] = useState('');
   // url edit when typing into the Input fields
