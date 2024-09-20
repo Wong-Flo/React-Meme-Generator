@@ -25,10 +25,10 @@ const TextInput = ({
           placeholder="Enter Top Text"
           value={tempTopText}
           onChange={(event) => setTempTopText(event.target.value)}
-          onFocus={(event) => {
+          /*   onFocus={(event) => {
             event.target.value = ''; // Clears the input field on focus
             setTempTopText(''); // Clears the temporary state for top text
-          }}
+          }} */
         />
       </label>
       <label>
@@ -37,10 +37,10 @@ const TextInput = ({
           placeholder="Enter Bottom Text"
           value={tempBottomText}
           onChange={(event) => setTempBottomText(event.target.value)}
-          onFocus={(event) => {
+          /* onFocus={(event) => {
             event.target.value = ''; // Clears the input field on focus
             setTempBottomText(''); // Clears the temporary state for top text
-          }}
+          }} */
         />
       </label>
       <button>Generate Meme</button>
