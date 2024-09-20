@@ -7,7 +7,7 @@ import TextInput from './textInput.js';
 export default function App() {
   const [topText, setTopText] = useState('nice');
   const [bottomText, setBottomText] = useState('Double Nice');
-  const [template, setTemplate] = useState('awesome');
+  const [template, setTemplate] = useState('doge');
   const [memeUrl, setMemeUrl] = useState('');
   // url edit when typing into the Input fields
   const generateMeme = () => {
