@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import FetchTemplate from './fetchTemplate.js';
 import Meme from './meme.js';
 import TextInput from './textInput.js';
@@ -10,16 +10,15 @@ export default function App() {
   const [template, setTemplate] = useState('doge');
   const [memeUrl, setMemeUrl] = useState('');
   // url edit when typing into the Input fields
-  const generateMeme = () => {
+  const generateMeme = useCallback(() => {
     const memeURL = `https://api.memegen.link/images/${template}/${topText || '_'}/${bottomText || '_'}.png`;
     setMemeUrl(memeURL);
-    setTemplate(template);
-  };
+  }, [topText, bottomText, template]);
 
   useEffect(() => {
     // generate meme when opening page
     generateMeme();
-  });
+  }, [generateMeme]);
 
   return (
     <div>
