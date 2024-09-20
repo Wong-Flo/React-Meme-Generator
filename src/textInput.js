@@ -26,8 +26,8 @@ const TextInput = ({
           value={tempTopText}
           onChange={(event) => setTempTopText(event.target.value)}
           onFocus={(event) => {
-            event.target.value = '';
-            setTempTopText('');
+            event.target.value = ''; // Clears the input field on focus
+            setTempTopText(''); // Clears the temporary state for top text
           }}
         />
       </label>
@@ -38,8 +38,8 @@ const TextInput = ({
           value={tempBottomText}
           onChange={(event) => setTempBottomText(event.target.value)}
           onFocus={(event) => {
-            event.target.value = '';
-            setTempBottomText('');
+            event.target.value = ''; // Clears the input field on focus
+            setTempBottomText(''); // Clears the temporary state for top text
           }}
         />
       </label>
