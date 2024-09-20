@@ -1,0 +1,53 @@
+import { useState } from 'react';
+
+const TextInput = ({
+  topText,
+  setTopText,
+  bottomText,
+  setBottomText,
+  memeText,
+  setMemeText,
+  generateMeme,
+}) => {
+  const [tempTopText, setTempTopText] = useState(topText);
+  const [tempBottomText, setTempBottomText] = useState(bottomText);
+
+  const handleGenerateMeme = (event) => {
+    event.preventDefault();
+    setTopText(tempTopText);
+    setBottomText(tempBottomText);
+    generateMeme();
+  };
+
+  return (
+    <form onSubmit={handleGenerateMeme}>
+      <label>
+        Top Text: <br />
+        <input
+          placeholder="Enter Top Text"
+          value={tempTopText}
+          onChange={(event) => setTempTopText(event.target.value)}
+          onFocus={(event) => {
+            event.target.value = '';
+            setTempTopText('');
+          }}
+        />
+      </label>
+      <label>
+        Bottom Text:
+        <input
+          placeholder="Enter Bottom Text"
+          value={tempBottomText}
+          onChange={(event) => setTempBottomText(event.target.value)}
+          onFocus={(event) => {
+            event.target.value = '';
+            setTempBottomText('');
+          }}
+        />
+      </label>
+      <button>Generate Meme</button>
+    </form>
+  );
+};
+
+export default TextInput;
