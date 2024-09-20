@@ -1,7 +1,5 @@
-import './styles.css';
 import { useEffect, useState } from 'react';
 import FetchTemplate from './fetchTemplate.js';
-import styles from './index.css';
 import Meme from './meme.js';
 import TextInput from './textInput.js';
 
@@ -21,7 +19,7 @@ export default function App() {
   useEffect(() => {
     // generate meme when opening page
     generateMeme();
-  }, []);
+  });
 
   return (
     <div>

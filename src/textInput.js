@@ -5,8 +5,6 @@ const TextInput = ({
   setTopText,
   bottomText,
   setBottomText,
-  memeText,
-  setMemeText,
   generateMeme,
 }) => {
   const [tempTopText, setTempTopText] = useState(topText);
