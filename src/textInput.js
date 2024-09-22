@@ -12,8 +12,8 @@ const TextInput = ({
 
   const handleGenerateMeme = (event) => {
     event.preventDefault();
-    setTopText(topText);
-    setBottomText(bottomText);
+    setTopText(tempTopText);
+    setBottomText(tempBottomText);
     generateMeme();
   };
 
