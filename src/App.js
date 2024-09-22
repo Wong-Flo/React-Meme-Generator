@@ -1,3 +1,4 @@
+import './App.css';
 import { useCallback, useEffect, useState } from 'react';
 import FetchTemplate from './fetchTemplate.js';
 import Meme from './meme.js';
