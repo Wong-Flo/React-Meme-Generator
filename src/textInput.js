@@ -12,8 +12,8 @@ const TextInput = ({
 
   const handleGenerateMeme = (event) => {
     event.preventDefault();
-    setTopText(tempTopText);
-    setBottomText(tempBottomText);
+    setTopText(topText);
+    setBottomText(bottomText);
     generateMeme();
   };
 
@@ -23,8 +23,8 @@ const TextInput = ({
         Top text <br />
         <input
           placeholder="Enter Top Text"
-          value={tempTopText}
-          onChange={(event) => setTempTopText(event.target.value)}
+          value={topText}
+          onChange={(event) => setTopText(event.target.value)}
           onFocus={(event) => {
             event.target.value = ''; // Clears the input field on focus
             setTempTopText(''); // Clears the temporary state for top text
@@ -35,8 +35,8 @@ const TextInput = ({
         Bottom text
         <input
           placeholder="Enter Bottom Text"
-          value={tempBottomText}
-          onChange={(event) => setTempBottomText(event.target.value)}
+          value={bottomText}
+          onChange={(event) => setBottomText(event.target.value)}
           onFocus={(event) => {
             event.target.value = ''; // Clears the input field on focus
             setTempBottomText(''); // Clears the temporary state for top text
